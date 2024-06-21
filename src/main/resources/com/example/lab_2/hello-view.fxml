@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="549.0" prefWidth="544.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab_2.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="welcomeText" prefHeight="48.0" prefWidth="138.0" text="NABIN OLI" textFill="#256e2b">
+      <font>
+         <Font size="27.0" />
+      </font></Label>
+   <Pane prefHeight="310.0" prefWidth="504.0">
+      <children>
+         <TextField fx:id="nID" layoutX="77.0" layoutY="10.0" prefHeight="25.0" prefWidth="175.0" />
+         <Text layoutX="19.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" wrappingWidth="32.53668212890625" />
+         <TextField fx:id="nCollege" layoutX="77.0" layoutY="38.0" prefHeight="25.0" prefWidth="175.0" />
+         <Text layoutX="19.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="College" wrappingWidth="45.600000000000136" />
+         <TextField fx:id="nUsername" layoutX="77.0" layoutY="72.0" prefHeight="25.0" prefWidth="175.0" />
+         <Text layoutX="17.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="62.399987792968886" />
+         <TextField fx:id="nPassword" layoutX="77.0" layoutY="104.0" prefHeight="25.0" prefWidth="175.0" />
+         <Text layoutX="17.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="62.399987792968886" />
+      </children>
+   </Pane>
+   <Button mnemonicParsing="false" onAction="#onHelloButtonClick" text="Fetch" />
+   <TableView fx:id="Table" prefHeight="200.0" prefWidth="200.0">
+     <columns>
+       <TableColumn fx:id="ID" prefWidth="75.0" text="ID" />
+       <TableColumn fx:id="College" prefWidth="75.0" text="College" />
+         <TableColumn fx:id="Username" prefWidth="75.0" text="Username" />
+         <TableColumn fx:id="Password" prefWidth="75.0" text="Password" />
+     </columns>
+   </TableView>
+   <Button mnemonicParsing="false" onAction="#Updatedata" text="Update" />
+    <Button onAction="#Deletedata" text="Delete" />
+   <Button mnemonicParsing="false" onAction="#Insertdata" text="Insert" />
+   <Button mnemonicParsing="false" onAction="#Loaddata" text="Load" />
+</VBox>
